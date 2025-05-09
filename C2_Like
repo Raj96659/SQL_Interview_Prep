@@ -3,3 +3,9 @@
 Query:
 
 SELECT * FROM Student WHERE FIRST_NAME LIKE '%a';
+
+12. Write an SQL query to print details of the Students whose FIRST_NAME ends with ‘a’ and contains five alphabets.
+
+Query:
+
+SELECT * FROM Student WHERE FIRST_NAME LIKE '_____a';
