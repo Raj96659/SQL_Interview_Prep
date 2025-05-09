@@ -1,0 +1,24 @@
+21. Write an SQL query to show the top n (say 5) records of Student table order by descending GPA.
+
+Query:
+
+SELECT * from Student ORDER BY GPA DESC LIMIT 5;
+
+
+22. Write an SQL query to determine the nth (say n=5) highest GPA from a table.
+
+Query:
+
+SELECT * FROM Student ORDER BY GPA DESC LIMIT 4, 1;
+
+
+
+23. Write an SQL query to determine the 5th highest GPA without using LIMIT keyword.
+Query:
+
+SELECT * FROM Student s1 
+WHERE 5 = (
+    SELECT COUNT(DISTINCT (s2.GPA)) 
+    FROM Student s2
+    WHERE s2.GPA >= s1.GPA
+);
