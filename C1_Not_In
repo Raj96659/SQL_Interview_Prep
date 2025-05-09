@@ -3,3 +3,12 @@
 Query:
 
 SELECT * from Student WHERE FIRST_NAME NOT IN ('Prem', 'Shivansh');
+
+
+27. Write an SQL query to list STUDENT_ID who does not get Scholarship.
+
+Query:
+
+SELECT STUDENT_ID FROM Student 
+WHERE STUDENT_ID NOT IN (SELECT STUDENT_REF_ID FROM Scholarship);
+
