@@ -1,0 +1,5 @@
+39. Write an SQL query to show the current date and time.
+Query:
+
+SELECT CURDATE(); -- To get the current date
+SELECT NOW(); -- To get the current date and time
