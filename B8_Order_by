@@ -3,3 +3,17 @@
 Query:
 
 SELECT * FROM Student ORDER BY FIRST_NAME , MAJOR DESC;
+
+
+
+33. Write an SQL query to fetch the last five records from a table.
+Query:
+
+SELECT * 
+FROM (
+    SELECT * 
+    FROM Student 
+    ORDER BY STUDENT_ID DESC 
+    LIMIT 5
+) AS subquery
+ORDER BY STUDENT_ID;
