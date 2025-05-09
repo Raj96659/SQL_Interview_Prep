@@ -5,3 +5,10 @@ Query:
 SELECT MAJOR, COUNT(MAJOR) from Student group by MAJOR order by COUNT(MAJOR) DESC;
 
 
+
+29. Write an SQL query to fetch the MAJOR subject that have less than 4 people in it.
+Query:
+
+SELECT MAJOR, COUNT(MAJOR) AS MAJOR_COUNT FROM Student GROUP BY MAJOR HAVING COUNT(MAJOR) < 4;
+
+
