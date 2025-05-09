@@ -1,0 +1,5 @@
+42. Write an SQL query to find the average GPA for each major.
+
+Query:
+
+SELECT MAJOR, AVG(GPA) AS AVERAGE_GPA FROM Student GROUP BY MAJOR;
