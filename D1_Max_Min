@@ -11,3 +11,10 @@ SELECT * FROM Student WHERE STUDENT_ID = (SELECT MAX(STUDENT_ID) FROM STUDENT);
 Query:
 
 SELECT * FROM Student WHERE STUDENT_ID = (SELECT MIN(STUDENT_ID) FROM Student);
+
+
+
+37. Write an SQL query to fetch MAJOR subjects along with the max GPA in each of these MAJOR subjects.
+Query:
+
+SELECT MAJOR, MAX(GPA) as MAXGPA FROM Student GROUP BY MAJOR;
