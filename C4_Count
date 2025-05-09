@@ -1,0 +1,5 @@
+14. Write an SQL query to fetch the count of Students having Major Subject ‘Computer Science’.
+
+Query:
+
+SELECT Major, COUNT(*) as TOTAL_COUNT FROM Student WHERE MAJOR = 'Computer Science';
