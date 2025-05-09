@@ -1,0 +1,5 @@
+8. Write a SQL query to print all Student details from Student table order by FIRST_NAME Ascending and MAJOR Subject descending .
+
+Query:
+
+SELECT * FROM Student ORDER BY FIRST_NAME , MAJOR DESC;
