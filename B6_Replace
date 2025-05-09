@@ -1,0 +1,5 @@
+6. Write a SQL query to print FIRST_NAME from the Student table after replacing 'a' with 'A'.
+
+Query:
+
+SELECT REPLACE(FIRST_NAME, 'a', 'A') FROM Student;
