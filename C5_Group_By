@@ -12,3 +12,7 @@ Query:
 SELECT MAJOR, COUNT(MAJOR) AS MAJOR_COUNT FROM Student GROUP BY MAJOR HAVING COUNT(MAJOR) < 4;
 
 
+30. Write an SQL query to show all MAJOR subject along with the number of people in there.
+Query:
+
+SELECT MAJOR, COUNT(MAJOR) AS ALL_MAJOR FROM Student GROUP BY MAJOR;
