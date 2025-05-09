@@ -3,3 +3,11 @@
 Query:
 
 SELECT * FROM Student WHERE STUDENT_ID = (SELECT MAX(STUDENT_ID) FROM STUDENT);
+
+
+
+32. Write an SQL query to fetch the first row of a table.
+
+Query:
+
+SELECT * FROM Student WHERE STUDENT_ID = (SELECT MIN(STUDENT_ID) FROM Student);
