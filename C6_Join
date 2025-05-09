@@ -1,0 +1,18 @@
+17. Display the details of students who have received scholarships, including their names, scholarship amounts, and scholarship dates.
+
+
+Query:
+
+SELECT 
+    Student.FIRST_NAME,
+    Student.LAST_NAME,
+    Scholarship.SCHOLARSHIP_AMOUNT,
+    Scholarship.SCHOLARSHIP_DATE
+FROM 
+    Student
+INNER JOIN 
+    Scholarship ON Student.STUDENT_ID = Scholarship.STUDENT_REF_ID;
+
+
+
+
