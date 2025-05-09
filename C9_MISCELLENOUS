@@ -22,4 +22,9 @@ UNION ALL
 SELECT * FROM Student ORDER BY STUDENT_ID;
 
 
+40. Write a query to create a new table which consists of data and structure copied from the other table (say Student) or clone the table named Student.
+Query:
+
+CREATE TABLE CloneTable AS SELECT * FROM Student;
+
 
