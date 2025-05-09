@@ -1,0 +1,5 @@
+5. Write a SQL query that fetches the unique values of MAJOR Subjects from Student table and print its length.
+
+SELECT MAJOR,LENGTH(MAJOR) FROM Student GROUP BY(MAJOR);                                                         
+or                                                                                                                                                                                                                 
+SELECT DISTINCT MAJOR, LENGTH(MAJOR) FROM Student; 
