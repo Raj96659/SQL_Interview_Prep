@@ -1,0 +1,7 @@
+16. Write an SQL query to fetch the no. of Students for each MAJOR subject in the descending order.
+
+Query:
+
+SELECT MAJOR, COUNT(MAJOR) from Student group by MAJOR order by COUNT(MAJOR) DESC;
+
+
