@@ -1,0 +1,13 @@
+18. Write an SQL query to show only odd rows from Student table.
+
+Query:
+
+SELECT * FROM Student WHERE student_id % 2 != 0;
+
+
+
+19. Write an SQL query to show only even rows from Student table.
+
+Query:
+
+SELECT * FROM Student WHERE student_id % 2 = 0;
